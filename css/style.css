@@ -1,0 +1,145 @@
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-right: 20px;
+}
+
+h2,
+h3,
+a {
+	text-decoration: none;
+}
+
+.logo {
+	font-size: 1.45em;
+	width: 40px;
+}
+
+.main-nav {
+	margin-top: 5px;
+	display: flex;	
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+	color: #34495e;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+
+.header {
+	padding: 0 20px;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/*mobile nav */
+#hamburger-icon {
+	margin: auto 0;
+	display: none;
+	cursor: pointer;
+  }
+  
+  #hamburger-icon div {
+	width: 35px;
+	height: 3px;
+	background-color: rgb(125, 125, 125);
+	margin: 6px 0;
+	transition: 0.4s;
+  }
+  
+  .open .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-6px, 6px);
+	transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .open .bar2 {
+	opacity: 0;
+  }
+  
+  .open .bar3 {
+	-webkit-transform: rotate(45deg) translate(-6px, -8px);
+	transform: rotate(45deg) translate(-6px, -8px);
+  }
+  
+  .mobile-menu {
+	display: none;
+	position: absolute;
+	top: 80px;
+	left: 0;
+	height: calc(40vh - 50px);
+	width: 100%;
+	background-color: #f4f4f4;
+	border: 1px solid #a2a2a2;
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+  }
+
+  .open .mobile-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;	
+    padding-top: calc(15vh - 50px);
+  }
+  
+  .mobile-menu li {
+	margin-bottom: 10px;
+  }
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media only screen and (max-width: 600px) {
+	header nav {
+	  display: none;
+	}
+  
+	#hamburger-icon {
+	  display: block;
+	}
+  }
+
+
+
+/*@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}*/
