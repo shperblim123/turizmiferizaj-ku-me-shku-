@@ -6,6 +6,31 @@
 	<title>login</title>
 </head>
 <body>
-
+	<form class="loginForm" action="#.php" method="post">
+		<div class="backContainer">
+			<a href="index.html">
+				<img src="img/left-arrow.png" width="16px">
+				<b style="margin-left: 5px;">Back</b>
+			</a>
+		</div>
+		<div class="imgContainer">
+		  <img src="img/avatar.png" class="avatar">
+		</div>
+		<div class="container">
+		  <label for="email"><b>Email</b></label>
+		  <input type="email" placeholder="Shkruaj Email" name="uname" required>
+	
+		  <label for="psw"><b>Passwordi</b></label>
+		  <input type="password" placeholder="Shkruaj Passwordin" name="psw" required>
+			<div class="buttonContainer">
+				<button class="submitButton" style="margin-right: 10px;" type="submit">Kyçu!</button>
+				<a class="registerButton" href='register.html'>Regjistrohu!</a>
+			</div>
+		  <label>
+			<input type="checkbox" checked="checked" name="remember"> Ruaj te dhenat
+		  </label>
+		  <span class="forgotPassword"><a href="#">Keni harruar passwordin?</a></span>
+		</div>
+	  </form>
 </body>
 </html>
