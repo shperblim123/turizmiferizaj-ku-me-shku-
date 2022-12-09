@@ -3,9 +3,44 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Register</title>
+	<title>Regjistrohu</title>
 </head>
 <body>
+	<form class="loginForm" action="#.php" method="post">
+		<div class="backContainer">
+			<a href="index.html">
+				<img src="img/left-arrow.png" width="16px">
+				<b style="margin-left: 5px;">Back</b>
+			</a>
+		</div>
+		<div class="imgContainer">
+		  <img src="img/avatar.png" class="avatar">
+		</div>
+		<div class="container">
+		  <label for="name"><b>Emri</b></label>
+		  <input type="text" placeholder="Shkruaj Emrin" name="name" required>
+		  
+		  <label for="surname"><b>Mbiemri</b></label>
+		  <input type="text" placeholder="Shkruaj Mbiemrin" name="surname" required>
+			
+		  <label for="email"><b>Email</b></label>
+		  <input type="email" placeholder="Shkruaj Email" name="email" required>
 
+		  <label for="confirmEmail"><b>Konfirmo Email</b></label>
+		  <input type="email" placeholder="Konfirmo Email" name="confirmEmail" required>
+	
+		  <label for="psw"><b>Passwordi</b></label>
+		  <input type="password" placeholder="Shkruaj Passwordin" name="psw" required>
+
+		  <label for="confirmPsw"><b>Konfirmo Passwordin</b></label>
+		  <input type="password" placeholder="Shkruaj Passwordin" name="confirmPsw" required>
+			
+		  <div class="buttonContainer">
+			<button class="submitButton" style="margin-right: 10px;" type="submit">Regjistrohu!</button>
+			<a class="registerButton" href='register.html'>Kyçu!</a>
+		</div>
+		  <label>
+		</div>
+	  </form>
 </body>
 </html>
