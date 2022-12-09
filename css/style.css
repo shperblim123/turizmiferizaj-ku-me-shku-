@@ -22,11 +22,6 @@ a {
 	color: black;
 }
 
-p{
-	color: black;
-	font-family: sans-serif;
-}
-
 .logo {
 	font-size: 1.45em;
 	width: 40px;
@@ -38,15 +33,11 @@ p{
 	margin-top: 5px;
 	display: flex;	
 }
-.logo a,
 .main-nav a {
-	padding: 10px 15px;
+	padding: 15px 10px;
 	text-transform: uppercase;
 	text-align: center;
 	display: block;
-}
-
-.main-nav a {
 	color: #ffffff;
 	font-size: .99em;
 }
@@ -67,7 +58,7 @@ p{
 	flex-direction: row;
 	justify-content: space-between;
 	width:100%;
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.3);
 	z-index: 999;
 }
 
@@ -126,8 +117,10 @@ p{
   .mobile-menu li {
 	margin-bottom: 10px;
   }
-/*image cover*/
-  .slider{
+  /*=======================================================*/
+
+  /*foto kover*/
+  .cover{
 	background-position: center;
   	background-repeat: no-repeat;
   	background-size: cover;
@@ -135,12 +128,15 @@ p{
     object-fit: cover;
 	height: 100vh;
   }
+
+  /*Texti mbi foto */
   .containerText {
 	position: relative;
 	text-align: center;
 	color: white;
 	margin-bottom: -10px;
   }
+
   .centerText {
 	position: absolute;
 	top: 50%;
@@ -153,11 +149,12 @@ p{
 	padding: 10px;
   }
 
-/*Text Section */
 .welcomeSection{
 	background-color: #ffffff;
 	padding: 30px;
 }
+/*=======================================================*/
+
 
 .iconContainer{
 	display:block; 
@@ -166,16 +163,101 @@ p{
 }
 
 .divSplit{
-	width:50%; 
+	width: 50%; 
 	float: left; 
-	display: inline-block;
 	text-align: center;
 	padding: 10px;
 }
 
+/*Stili i faqes login */
+
+input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+.buttonContainer{
+	display: flex;
+}
+.submitButton {
+	background-color: #2196f3;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	width: 100%;
+  }
+  
+  .submitButton:hover {
+	opacity: 0.8;
+  }
+  
+  .imgContainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+  }
+  
+  img.avatar {
+	width: 40%;
+	border-radius: 50%;
+  }
+  
+  .container {
+	padding: 16px;
+  }
+  
+  .forgotPassword {
+	float: right;
+	font-size: 14px;
+  }
+
+  .loginForm{
+	width: 50%;
+	margin: auto;
+  }
+
+  .accountButton{
+	padding: 10px 3px!important;
+  }
+
+  .registerButton{
+	background-color: indianred;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 10px 8px 0;
+    border: none;
+    font-size: 13.3px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .backContainer{
+	display: flex;
+	margin: 20px 0;
+  }
+  
+  /*Kycu dhe Regjistrou button ne navbar */
+  
+  .loginButton {
+	background-color: #04aa6d00;
+	color: white;
+	border: solid 1px white;
+	border-radius: 30px;
+	width: 100%;
+	padding: 3px 10px;
+	font-size: .99em;
+	vertical-align: top;
+	height: 35px;
+  }
+
+  .userIcon{
+	width: 14px;
+	vertical-align: middle;
+  }
 /*Media Queries */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
 	header nav {
 	  display: none;
 	}
@@ -186,5 +268,18 @@ p{
 	a{
 		color: rgba(0, 0, 0, 0.7);
 	}
+	.loginForm{
+		width: 100%;
+	  }
 
+	.loginButton {
+		background-color: #2196f3;
+		color: white;
+		border: solid 1px white;
+		border-radius: 30px;
+		width: 100%;
+		padding: 10px 10px;
+		
+	  } 
   }
+
