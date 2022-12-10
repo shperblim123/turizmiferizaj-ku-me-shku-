@@ -260,6 +260,60 @@ input[type=text], input[type=password], input[type=email] {
 	width: 14px;
 	vertical-align: middle;
   }
+
+  /* faqja rreth ferizajit*/
+  .tekstiii{
+	margin: 0.5em 0;
+	display: block;
+	font-size: 0.875em;
+    font-size: calc(1em * 0.875);
+    line-height: 1.6;
+	padding: 1%;
+  }
+  .titulli{
+	margin-top: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
+	padding: 1%;
+  }
+
+  .paragrafi{
+	margin: 0.5em 0;
+	display: block;
+	font-size: 0.875em;
+    font-size: calc(1em * 0.875);
+    line-height: 1.6;
+	padding: 1%;
+	
+  }
+
+  .Historia{
+	margin-top: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.0rem;
+	padding: 1%;
+
+  }
+
+  .pargrafihistoria{
+	margin: 0.5em 0;
+	display: block;
+	font-size: 0.875em;
+    font-size: calc(1em * 0.875);
+    line-height: 1.6;
+	padding: 1%;
+
+  }
+
+  .foto{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 144%;
+	max-width: 400px;
+    height: auto;
+  }
+  
 /*Media Queries */
 
 @media only screen and (max-width: 900px) {
