@@ -217,6 +217,11 @@ input[type=text], input[type=password], input[type=email] {
 	margin: auto;
   }
 
+  .registerForm{
+	width: 50%;
+	margin: auto;
+  }
+
   .accountButton{
 	padding: 10px 3px!important;
   }
