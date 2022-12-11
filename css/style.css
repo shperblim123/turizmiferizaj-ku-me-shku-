@@ -230,7 +230,7 @@ input[type=text], input[type=password], input[type=email] {
 	background-color: indianred;
     color: white;
     padding: 14px 20px;
-    margin: 8px 10px 8px 0;
+    margin: 8px 0px 8px 0px;
     border: none;
     font-size: 13.3px;
     text-align: center;
@@ -262,22 +262,14 @@ input[type=text], input[type=password], input[type=email] {
   }
 
   /* faqja rreth ferizajit*/
-  .tekstiii{
-	margin: 0.5em 0;
-	display: block;
-	font-size: 0.875em;
-    font-size: calc(1em * 0.875);
-    line-height: 1.6;
-	padding: 1%;
-  }
-  .titulli{
+  .title{
 	margin-top: 10px;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.6rem;
 	padding: 1%;
   }
 
-  .paragrafi{
+  .paragraph{
 	margin: 0.5em 0;
 	display: block;
 	font-size: 0.875em;
@@ -287,25 +279,7 @@ input[type=text], input[type=password], input[type=email] {
 	
   }
 
-  .Historia{
-	margin-top: 10px;
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.0rem;
-	padding: 1%;
-
-  }
-
-  .pargrafihistoria{
-	margin: 0.5em 0;
-	display: block;
-	font-size: 0.875em;
-    font-size: calc(1em * 0.875);
-    line-height: 1.6;
-	padding: 1%;
-
-  }
-
-  .foto{
+  .imageText{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -313,7 +287,47 @@ input[type=text], input[type=password], input[type=email] {
 	max-width: 400px;
     height: auto;
   }
+    
+  .image-gallery {
+	display: flex;
+  }
+
+  .row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+  }
   
+  /* Create four equal columns that sits next to each other */
+  .column {
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+  }
+  
+  .column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+	.column {
+	  flex: 50%;
+	  max-width: 50%;
+	}
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.column {
+	  flex: 100%;
+	  max-width: 100%;
+	}
+  }
+
+
 /*Media Queries */
 
 @media only screen and (max-width: 900px) {
@@ -327,9 +341,10 @@ input[type=text], input[type=password], input[type=email] {
 	a{
 		color: rgba(0, 0, 0, 0.7);
 	}
-	.loginForm{
-		width: 100%;
+	.loginForm .registerForm{
+		width: 80%;
 	  }
+	  
 
 	.loginButton {
 		background-color: #2196f3;

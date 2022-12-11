@@ -5,9 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Kycu!</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/script.js"></script>
 </head>
 <body>
-	<form class="loginForm" action="#.php" method="post">
+	<form class="loginForm" name="loginForm" action="#.php" method="post" onsubmit="return validateLoginForm()">
 		<div class="backContainer">
 			<a href="index.html">
 				<img src="img/left-arrow.png" width="16px">
@@ -19,10 +20,12 @@
 		</div>
 		<div class="container">
 		  <label for="email"><b>Email</b></label>
-		  <input type="email" placeholder="Shkruaj Email" name="uname" required>
-	
+		  <input type="text" placeholder="Shkruaj Email" name="email">
+		  <label id="emailError" style="color: red;"></label><br>
+
 		  <label for="psw"><b>Passwordi</b></label>
 		  <input type="password" placeholder="Shkruaj Passwordin" name="psw" required>
+		  <label id="pswError" style="color: red;"></label><br>
 			<div class="buttonContainer">
 				<button class="submitButton" style="margin-right: 10px;" type="submit">Kyçu!</button>
 				<a class="registerButton" href='register.html'>Regjistrohu!</a>

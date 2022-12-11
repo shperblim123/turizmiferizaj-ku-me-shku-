@@ -5,9 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Regjistrohu</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/script.js"></script>
 </head>
 <body>
-	<form class="registerForm" action="#.php" method="post">
+	<form class="registerForm" action="#.php" name="registerForm" method="post" onsubmit="return validateRegisterForm()">
 		<div class="backContainer">
 			<a href="index.html">
 				<img src="img/left-arrow.png" width="16px">
@@ -19,26 +20,30 @@
 		</div>
 		<div class="container">
 		  <label for="name"><b>Emri</b></label>
-		  <input type="text" placeholder="Shkruaj Emrin" name="name" required>
+		  <input type="text" placeholder="Shkruaj Emrin" name="name">
 		  
 		  <label for="surname"><b>Mbiemri</b></label>
-		  <input type="text" placeholder="Shkruaj Mbiemrin" name="surname" required>
+		  <input type="text" placeholder="Shkruaj Mbiemrin" name="surname">
 			
 		  <label for="email"><b>Email</b></label>
-		  <input type="email" placeholder="Shkruaj Email" name="email" required>
+		  <input type="text" placeholder="Shkruaj Email" name="email">
+		  <label id="emailError" style="color: red;"></label><br>
 
 		  <label for="confirmEmail"><b>Konfirmo Email</b></label>
-		  <input type="email" placeholder="Konfirmo Email" name="confirmEmail" required>
+		  <input type="email" placeholder="Konfirmo Email" name="confirmEmail">
+		  <label id="emailConfirmError" style="color: red;"></label><br>
 	
 		  <label for="psw"><b>Passwordi</b></label>
 		  <input type="password" placeholder="Shkruaj Passwordin" name="psw" required>
+		  <label id="pswError" style="color: red;"></label><br>
 
 		  <label for="confirmPsw"><b>Konfirmo Passwordin</b></label>
-		  <input type="password" placeholder="Shkruaj Passwordin" name="confirmPsw" required>
+		  <input type="password" placeholder="Shkruaj Passwordin" name="confirmPsw">
+		  <label id="pswConfirmError" style="color: red;"></label><br>
 			
 		  <div class="buttonContainer">
 			<button class="submitButton" style="margin-right: 10px;" type="submit">Regjistrohu!</button>
-			<a class="registerButton" href='register.html'>Kyçu!</a>
+			<a class="registerButton" href='login.html'>Kyçu!</a>
 		</div>
 		  <label>
 		</div>
