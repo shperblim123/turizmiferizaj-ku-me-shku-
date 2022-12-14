@@ -300,7 +300,6 @@ input[type=text], input[type=password], input[type=email] {
   
   /* Create four equal columns that sits next to each other */
   .column {
-	flex: 25%;
 	max-width: 25%;
 	padding: 0 4px;
   }
@@ -311,21 +310,24 @@ input[type=text], input[type=password], input[type=email] {
 	width: 100%;
   }
   
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-	.column {
-	  flex: 50%;
-	  max-width: 50%;
-	}
+  .container2{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
   }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-	.column {
-	  flex: 100%;
-	  max-width: 100%;
-	}
+
+  h1{
+	color: #333;
+	margin-bottom: 50px;
   }
+
+  iframe{
+	width: 100%;
+	height: 500px;
+  }
+ 
 
 
 /*Media Queries */
@@ -338,14 +340,15 @@ input[type=text], input[type=password], input[type=email] {
 	#hamburger-icon {
 	  display: block;
 	}
+
 	a{
 		color: rgba(0, 0, 0, 0.7);
 	}
+
 	.loginForm .registerForm{
 		width: 80%;
 	  }
 	  
-
 	.loginButton {
 		background-color: #2196f3;
 		color: white;
@@ -355,5 +358,9 @@ input[type=text], input[type=password], input[type=email] {
 		padding: 10px 10px;
 		
 	  } 
+	  .column {
+		flex: 50%;
+		max-width: 50%;
+	  }
   }
 
