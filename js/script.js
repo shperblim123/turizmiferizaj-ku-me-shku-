@@ -30,9 +30,6 @@ function validateLoginForm() {
     let passwordRGEX = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;;
     let passwordAndRGEX = passwordRGEX.test(password);
 
-    
-    
-
     if(email == '')
     {
       document.getElementById('emailError').innerHTML = 'Sheno email!'
